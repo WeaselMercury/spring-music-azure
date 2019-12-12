@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                //echo 'Building..'
+                echo 'Building..'
                 //echo 'le Build, seconde édition'
                 //sh label: '', script: 'make'
             }
@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                //echo 'Deploying....'
+                echo 'Deploying....'
                 //echo 'le Deploy, seconde édition'
                 //sh 'make publish'
             }

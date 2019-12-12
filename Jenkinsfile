@@ -15,10 +15,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-                //echo 'Testing..'
+                echo 'Testing..'
                 //echo 'le Test, seconde édition'
                 //sh 'make check'
-                junit 'reports/**/*.xml'
+                //junit 'reports/**/*.xml'
             }
         }
         stage('Deploy') {

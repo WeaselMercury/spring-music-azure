@@ -8,9 +8,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                //echo 'Building..'
                 //echo 'le Build, seconde édition'
-                sh 'make'
+                sh label: '', script: 'make'
             }
         }
         stage('Test') {

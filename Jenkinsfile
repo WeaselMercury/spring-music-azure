@@ -10,22 +10,22 @@ pipeline {
             steps {
                 //echo 'Building..'
                 //echo 'le Build, seconde édition'
-                sh label: '', script: 'make'
+                //sh label: '', script: 'make'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                //echo 'Testing..'
                 //echo 'le Test, seconde édition'
-                sh 'make check'
+                //sh 'make check'
                 junit 'reports/**/*.xml'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                //echo 'Deploying....'
                 //echo 'le Deploy, seconde édition'
-                sh 'make publish'
+                //sh 'make publish'
             }
         }
     }
